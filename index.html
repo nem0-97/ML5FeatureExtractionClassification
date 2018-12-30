@@ -4,15 +4,15 @@
     <!-- ml5.js -->
     <script src="https://unpkg.com/ml5@0.1.1/dist/ml5.min.js"></script>
     <!--p5.js-->
-    <script language="javascript" type="text/javascript" src="p5.min.js"></script>
-    <script language="javascript" type="text/javascript" src="p5.dom.min.js"></script>
+    <script language="javascript" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.2/p5.min.js"></script>
+    <script language="javascript" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.2/addons/p5.dom.min.js"></script>
 
     <script language="javascript" type="text/javascript" src="sketch.js"></script>
     <!-- this line removes any default padding and style. you might only need one of these values set. -->
     <!--style> body {padding: 0; margin: 0;} </style-->
   </head>
   <body>
-    <br><br><br><br><br><br>
+    <br>
     Label:<input id='label' type='text'/>
     <button onClick='addClassImg(document.getElementById("label").value)'>Add New Image and Label</button>
     <button onClick='classifier.train(whileTraining)'>Train With New Images</button>

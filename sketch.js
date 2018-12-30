@@ -15,7 +15,6 @@ function setup(){
 //called by button when adding images with label to classifier
 function addClassImg(label){
   classifier.addImage(label);
-  console.log(label+' image added');
 }
 
 //called after images added to classifier and when training is started by user
